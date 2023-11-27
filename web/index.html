@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agencia de Viajes</title>
+    <!-- No olvides incluir Bootstrap y cualquier otro CSS o JavaScript necesario aquí -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Agencia de Viajes</h1>
+
+        <!-- Formulario de registro de clientes -->
+        <div class="card my-4">
+            <div class="card-header">
+                Registro de Clientes
+            </div>
+            <div class="card-body">
+                <form id="registro-cliente">
+                    <div class="form-group">
+                        <label for="rut">RUT:</label>
+                        <input type="text" class="form-control" id="rut" name="rut">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Visualización de vuelos -->
+        <div class="card my-4">
+            <div class="card-header">
+                Vuelos Disponibles
+            </div>
+            <div class="card-body" id="vuelos">
+                <!-- Opciones de vuelo -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="vuelo-opcion" id="vuelo1" value="1">
+                    <label class="form-check-label" for="vuelo1">
+                        Vuelo 1 - Ciudad A a Ciudad B - Precio: $XXX
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="vuelo-opcion" id="vuelo2" value="2">
+                    <label class="form-check-label" for="vuelo2">
+                        Vuelo 2 - Ciudad C a Ciudad D - Precio: $YYY
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Formulario de reserva de vuelos -->
+        <div class="card my-4">
+            <div class="card-header">
+                Reserva de Vuelos
+            </div>
+            <div class="card-body">
+                <form id="reserva-vuelo">
+                    <div class="form-group">
+                        <label for="id-vuelo">ID del Vuelo:</label>
+                        <input type="text" class="form-control" id="id-vuelo" name="id-vuelo">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre-pasajero">Nombre del Pasajero:</label>
+                        <input type="text" class="form-control" id="nombre-pasajero" name="nombre-pasajero">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-vuelo">Fecha del Vuelo:</label>
+                        <input type="date" class="form-control" id="fecha-vuelo" name="fecha-vuelo">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Reservar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Visualización de reservas -->
+        <div class="card my-4">
+            <div class="card-header">
+                Mis Reservas
+            </div>
+            <div class="card-body" id="reservas">
+                <!-- Las reservas del cliente se cargarán aquí -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
